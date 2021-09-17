@@ -1,6 +1,6 @@
 <?php
-include_once 'db.php';
-include_once 'hp.php';
+include_once 'xdb.php';
+include_once 'xhp.php';
 
 $result = mysqli_query($conn,"SELECT * FROM customer");
 ?>

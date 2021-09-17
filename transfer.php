@@ -1,6 +1,6 @@
 <?php
-include_once 'db.php';
-include_once 'hp.php';
+include_once 'xdb.php';
+include_once 'xhp.php';
 
 $result = mysqli_query($conn,"SELECT tname,amount,balance FROM transfer where name='" . $_GET["name"] . "'");
 ?>
@@ -75,7 +75,7 @@ a { text-decoration: none; }
 	?>
 	</div>
 </table><br><br><br><br>
-<center><h3><a href="calc.php?name=<?php echo $_GET["name"]; ?>"><button type="submit" name="submit" class="btn">Transfer</button></a</h3>
+<center><h3><a href="xcalc.php?name=<?php echo $_GET["name"]; ?>"><button type="submit" name="submit" class="btn">Transfer</button></a</h3>
 </center>   
 </body>
 </html>

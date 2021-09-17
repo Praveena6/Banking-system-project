@@ -107,7 +107,7 @@ color: linear-gradient(to right,#ff105f,#ffad06);
  <div class="form-box"><br><br>
  <center><h2><font color =white >Transaction</h2></center>
          <div class="booking">
-		 <form  action="calc.php"  method="post"><br>
+		 <form  action="xcalc.php"  method="post"><br>
 		 <center><h3><font color="white">
 <?php
 	$i=0;

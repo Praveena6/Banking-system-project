@@ -1,6 +1,6 @@
 <?php
-include_once 'db.php';
-include_once 'hp.php';
+include_once 'xdb.php';
+include_once 'xhp.php';
 
 $result = mysqli_query($conn,"SELECT balance FROM customer where name='" . $_GET["name"] . "'");
 
@@ -158,7 +158,7 @@ if(!$con)
 {
 	echo"not conn";
 }
-if(!mysqli_select_db($con,'bank'))
+if(!mysqli_select_db($con,'xbank'))
 {
 	echo"not sel";
 }
